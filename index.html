@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/animate.css-master/animate.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
+
+  <title>Pitchire</title>
+</head>
+
+<body class="bg-right">
+  <div class="mt-3">
+    <div class="dash-sec-left">
+      <div class="container" mt-5>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 d-md-block">
+            <div class="card bg-common card left">
+              <div class="card-body">
+                <nav class="nav d-md-block d-none ">
+                  <a data-bs-toggle="tab" class="nav-link active" aria-current="page" href="#bussines"><i
+                      class="fa-solid fa-business-time"></i>Add Bussines</a>
+                  <a data-bs-toggle="tab" class="nav-link" href="#profile"><i class="fa-solid fa-building"></i>Change
+                    Profile</a>
+
+                  <a data-bs-toggle="tab" class="nav-link" href="#edit"><i class="fa-solid fa-pen-to-square"></i>Edit
+                    Bussines</a>
+
+                  <a data-bs-toggle="tab" class="nav-link" href="#update"><i
+                      class="fa-solid fa-business-time"></i>update
+                    Bussines</a>
+                  <a data-bs-toggle="tab" class="nav-link" href="#delete"><i
+                      class="fa-solid fa-business-time"></i>delete
+                    Bussines</a>
+
+
+                </nav>
+              </div>
+            </div>
+          </div>
+          <!-- =====right section===== -->
+          <div class="col-lg-8 col-md-9 ">
+            <div class="card">
+              <div class="card-header border-bottom mb-3 d-md-none">
+                <ul class="nav nav-tabs card-header-tabs nav-fill">
+                  <li class="nav-item">
+                    <a data-bs-toggle="tab" class="nav-link active" aria-current="page" href="#bussines"><i
+                        class="fa-solid fa-business-time"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-bs-toggle="tab" class="nav-link" href="#profile"><i class="fa-solid fa-building"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-bs-toggle="tab" class="nav-link" href="#edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-bs-toggle="tab" class="nav-link" href="#update"><i
+                        class="fa-solid fa-business-time"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-bs-toggle="tab" class="nav-link" href="#delete"><i
+                        class="fa-solid fa-business-time"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- ====add bussines details section====== -->
+
+              <div class="card-body tab-content border-0">
+                <!-- ====actual data====== -->
+                <div class="tab-pane active" id="bussines">
+                  <h2>add your busssines details</h2>
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label pt-2 pb-1">Name</label>
+                      <input type="text" class="form-control border-0 " placeholder="enter name">
+                      <label for="exampleInputEmail1" class="form-label pt-2 pb-1">Email</label>
+                      <input type="email" class="form-control border-0 " placeholder="enter email">
+                      <label for="phone" class="form-label pt-2 pb-1">Enter Phone No</label>
+                      <input type="tel" id="phone" class="form-control border-0 " placeholder="enter phone no"
+                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+                      <label for="exampleInputEmail1" class="form-label pt-2 pb-1">Bussines name</label>
+                      <input type="text" class="form-control border-0 " placeholder="enter bussines name">
+                      <label for="exampleInputEmail1" class="form-label pt-2 pb-1">Location</label>
+                      <input type="text" class="form-control border-0 " placeholder="enter location">
+
+
+
+                      <label for="exampleInputEmail1" class="form-label pt-2 pb-1">Website URL</label>
+                      <input type="url" class="form-control border-0 " placeholder="enter url">
+                      <label for="exampleInputEmail1" class="form-label pt-2 pb-1">Social media link</label>
+                      <input type="url" class="form-control border-0 " placeholder="enter url">
+
+                      <label for="exampleInputEmail1" class="form-label pt-2 pb-1">Enter time</label>
+                      <input type="time" class=" form-control border-0" placeholder="enter time">
+                      <label for="myfile" class="form-label pt-2 pb-1">Select bussines logo</label>
+                      <input type="file" class="form-control border-0 " placeholder="bussines logo">
+                      <label for="myfile" class="form-label pt-2 pb-1">Select bussines gallery</label>
+
+                      <input type="file" class="form-control border-0 " placeholder="bussines logo" multiple>
+                      <label for="myfile" class="form-label pt-2 pb-1">Enter short description</label>
+
+                      <textarea rows="2"></textarea>
+                      <label for="myfile" class="form-label pt-2 pb-1">Enter long description</label>
+
+                      <textarea rows="4"></textarea>
+                    </div>
+                  </form>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+
+                </div>
+                <div class="tab-pane " id="profile">
+                  <h1>add your profile</h1>
+                </div>
+                <div class="tab-pane" id="edit">
+                  <h1>edit your busssines</h1>
+                </div>
+                <div class="tab-pane" id="update">
+                  <h1>update your busssines</h1>
+                </div>
+                <div class="tab-pane" id="delete">
+                  <h1>delete your busssines</h1>
+                </div>
+
+
+
+
+
+              </div>
+
+
+
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</body>
+
+</html>
